@@ -31,3 +31,15 @@ while biscuit < 3
   biscuit += 1
   puts "ポケットを叩くとビスケットが#{biscuit}つ"
 end
+
+hash = {}
+hash.default = 0
+array = "caffelatte".chars
+array.each do |x|
+  hash[x] += 1
+end
+
+p hash
+
+menu = { coffee: 300, cafe_latte: 400 } 
+puts "cafelatte" if menu.has_key?(:cafe_latte) && menu[:cafe_latte]
